@@ -130,13 +130,12 @@ public class Resolver
         SpiralizeJelitter(arr, x + 2);
     }
 
+    private readonly int[] _dX = new int[] { 1, 0, -1, 0 };
+    private readonly int[] _dY = new int[] { 0, 1, 0, -1 };
+    private readonly int[] _dLen = new int[] { 2, 0, 2, 0 };
     public int[,] SpiralizeKableado(int size)
     {
         int[,] grid = new int[size, size];
-        int[] dX = new int[] { 1, 0, -1, 0 };
-        int[] dY = new int[] { 0, 1, 0, -1 };
-        int[] dLen = new int[] { 2, 0, 2, 0 };
-
         int len = size + 1;
         int x = -2;
         int y = 0;
@@ -145,15 +144,15 @@ public class Resolver
         {
             for (int i = 0; i < len; i++)
             {
-                x += dX[iter];
-                y += dY[iter];
+                x += _dX[iter];
+                y += _dY[iter];
                 if (x >= 0)
                 {
                     grid[y, x] = 1;
                 }
             }
             if (len == 1) { break; }
-            len -= dLen[iter];
+            len -= _dLen[iter];
             iter = (iter + 1) % 4;
         }
         return grid;
