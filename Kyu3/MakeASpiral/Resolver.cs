@@ -12,77 +12,77 @@ public class Resolver
     private const int Size2 = 500;
     private const int Size3 = 1000;
 
-    //[Benchmark]
-    //public void Resolve50()
-    //{
-    //    int[,] res = new int[Size, Size];
-    //    PaintIteration(res, 0, Size);
-    //    //Print2DArray(res);
-    //}
+    [Benchmark]
+    public void Resolve50()
+    {
+        int[,] res = new int[Size, Size];
+        PaintIteration(res, 0, Size);
+        //Print2DArray(res);
+    }
 
-    //[Benchmark]
-    //public void ResolveKableado50() => SpiralizeKableado(Size);//Print2DArray(SpiralizeKableado(Size));
+    [Benchmark]
+    public void ResolveKableado50() => SpiralizeKableado(Size);//Print2DArray(SpiralizeKableado(Size));
 
-    //[Benchmark]
-    //public void ResolveJelitter50()
-    //{
-    //    int[,] arr = new int[Size, Size];
+    [Benchmark]
+    public void ResolveJelitter50()
+    {
+        int[,] arr = new int[Size, Size];
 
-    //    SpiralizeJelitter(arr, 0);
-    //    //Print2DArray(arr);
-    //}
+        SpiralizeJelitter(arr, 0);
+        //Print2DArray(arr);
+    }
 
     [Benchmark]
     public void ResolveCDeCompilador50() =>
         //SpiralizeCDeCompilador(Size);
         SpiralizeCDeCompilador(Size);
 
-    //[Benchmark]
-    //public void Resolve500()
-    //{
-    //    int[,] res = new int[Size2, Size2];
-    //    PaintIteration(res, 0, Size2);
-    //    //Print2DArray(res);
-    //}
+    [Benchmark]
+    public void Resolve500()
+    {
+        int[,] res = new int[Size2, Size2];
+        PaintIteration(res, 0, Size2);
+        //Print2DArray(res);
+    }
 
-    //[Benchmark]
-    //public void ResolveKableado500() => SpiralizeKableado(Size2);//Print2DArray(SpiralizeKableado(Size));
+    [Benchmark]
+    public void ResolveKableado500() => SpiralizeKableado(Size2);//Print2DArray(SpiralizeKableado(Size));
 
-    //[Benchmark]
-    //public void ResolveJelitter500()
-    //{
-    //    int[,] arr = new int[Size2, Size2];
+    [Benchmark]
+    public void ResolveJelitter500()
+    {
+        int[,] arr = new int[Size2, Size2];
 
-    //    SpiralizeJelitter(arr, 0);
-    //    //Print2DArray(arr);
+        SpiralizeJelitter(arr, 0);
+        //Print2DArray(arr);
 
-    //}
+    }
 
     [Benchmark]
     public void ResolveCDeCompilador500() =>
         //SpiralizeCDeCompilador(Size);
         SpiralizeCDeCompilador(Size2);
 
-    //[Benchmark]
-    //public void Resolve1000()
-    //{
-    //    int[,] res = new int[Size3, Size3];
-    //    PaintIteration(res, 0, Size3);
-    //    //Print2DArray(res);
-    //}
+    [Benchmark]
+    public void Resolve1000()
+    {
+        int[,] res = new int[Size3, Size3];
+        PaintIteration(res, 0, Size3);
+        //Print2DArray(res);
+    }
 
-    //[Benchmark]
-    //public void ResolveKableado1000() => SpiralizeKableado(Size3);//Print2DArray(SpiralizeKableado(Size));
+    [Benchmark]
+    public void ResolveKableado1000() => SpiralizeKableado(Size3);//Print2DArray(SpiralizeKableado(Size));
 
-    //[Benchmark]
-    //public void ResolveJelitter1000()
-    //{
-    //    int[,] arr = new int[Size3, Size3];
+    [Benchmark]
+    public void ResolveJelitter1000()
+    {
+        int[,] arr = new int[Size3, Size3];
 
-    //    SpiralizeJelitter(arr, 0);
-    //    //Print2DArray(arr);
+        SpiralizeJelitter(arr, 0);
+        //Print2DArray(arr);
 
-    //}
+    }
 
     [Benchmark]
     public void ResolveCDeCompilador1000() =>
