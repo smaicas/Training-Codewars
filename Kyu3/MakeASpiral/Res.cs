@@ -6,7 +6,7 @@ namespace MakeASpiral;
 [RankColumn]
 [Orderer(SummaryOrderPolicy.FastestToSlowest)]
 [MemoryDiagnoser]
-public class Resolver
+public class Res
 {
     private const int Size = 50;
     private const int Size2 = 500;

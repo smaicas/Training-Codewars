@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
 using MakeASpiral;
 
-BenchmarkDotNet.Reports.Summary summary = BenchmarkRunner.Run<Resolver>();
+BenchmarkDotNet.Reports.Summary summary = BenchmarkRunner.Run<Res>();
 
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("Benchmark ended!. Press any key to close");

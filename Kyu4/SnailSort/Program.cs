@@ -1,7 +1,7 @@
 ﻿
 using SnailSort;
 
-Resolver resolver = new();
+Res resolver = new();
 
 int[] result = resolver.Resolve();
 

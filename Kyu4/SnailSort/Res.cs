@@ -1,5 +1,5 @@
 ﻿namespace SnailSort;
-public class Resolver
+public class Res
 {
     public int[] Resolve()
     {
