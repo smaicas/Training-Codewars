@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeASpiral", "Kyu3\MakeASp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnailSort", "Kyu4\SnailSort\SnailSort.csproj", "{73D36217-28CB-41EA-ADC2-27F1DA183CD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeASpiral.Test", "MakeASpiral.Test\MakeASpiral.Test.csproj", "{84D7F972-C87D-4DD1-856C-9253384BFC94}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanReadableDurationFormat", "Kyu4\HumanReadableDurationFormat\HumanReadableDurationFormat.csproj", "{D2D51CA8-36E1-4267-A681-B079E8292854}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeExtraction", "Kyu4\RangeExtraction\RangeExtraction.csproj", "{609A2BAA-4C79-4D5C-947A-882D5E2042CE}"
@@ -31,6 +33,10 @@ Global
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2D51CA8-36E1-4267-A681-B079E8292854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2D51CA8-36E1-4267-A681-B079E8292854}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D51CA8-36E1-4267-A681-B079E8292854}.Release|Any CPU.ActiveCfg = Release|Any CPU

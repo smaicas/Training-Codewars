@@ -89,7 +89,7 @@ public class Res
         //SpiralizeCDeCompilador(Size);
         SpiralizeCDeCompilador(Size3);
 
-    private void SpiralizeJelitter(int[,] arr, int x)
+    public void SpiralizeJelitter(int[,] arr, int x)
     {
         int arrLength = arr.GetLength(0);
         if ((x > Math.Ceiling((float)arrLength / 2) - 1))
@@ -158,6 +158,60 @@ public class Res
         return grid;
     }
 
+    #region Kableado 2
+    
+    [Benchmark]
+    public void ResolveKableado2_50() => SpiralizeKableado2(Size);
+
+    [Benchmark]
+    public void ResolveKableado2_500() => SpiralizeKableado2(Size2);
+
+    [Benchmark]
+    public void ResolveKableado2_1000() => SpiralizeKableado2(Size3);
+
+    public int[,] SpiralizeKableado2(int size)
+    {
+        int[,] grid = new int[size, size];
+        int len = size + 1;
+        int x = -2;
+        int y = 0;
+        while (len > 1)
+        {
+            for (int i = 0; i < len; i++)
+            {
+                x += 1;
+                if (x >= 0)
+                {
+                    grid[y, x] = 1;
+                }
+            }
+
+            len -= 2;
+            for (int i = 0; i < len; i++)
+            {
+                y += 1;
+                grid[y, x] = 1;
+            }
+
+            for (int i = 0; i < len; i++)
+            {
+                x -= 1;
+                grid[y, x] = 1;
+            }
+
+            len -= 2;
+            for (int i = 0; i < len; i++)
+            {
+                y -= 1;
+                grid[y, x] = 1;
+            }
+        }
+
+        return grid;
+    }
+
+    #endregion Kableado 2
+
     public int[,] SpiralizeCDeCompilador(int n)
     {
         int[] arr = new int[n * n];
@@ -225,7 +279,7 @@ public class Res
         return result;
     }
 
-    private void PaintIteration(int[,] res, int index, int size)
+    public void PaintIteration(int[,] res, int index, int size)
     {
         if (index >= size)
         {
