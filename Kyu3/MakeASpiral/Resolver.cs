@@ -175,7 +175,7 @@ public class Resolver
         int len = size + 1;
         int x = -2;
         int y = 0;
-        while (len <= 1)
+        while (len > 1)
         {
             for (int i = 0; i < len; i++)
             {
