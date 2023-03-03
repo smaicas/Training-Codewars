@@ -20,24 +20,24 @@ public class ResolverTest
         {1, 0, 0, 0, 0, 0, 0, 1},
         {1, 1, 1, 1, 1, 1, 1, 1},
     };
-    
+
     [Fact]
     public void Spiralize_Test05()
     {
         const int input = 5;
 
         int[,] actual = new int[input, input];
-        new Resolver().PaintIteration(actual, 0, input);
+        new Res().PaintIteration(actual, 0, input);
         Assert.Equal(_expectedTest05, actual);
     }
-    
+
     [Fact]
     public void Spiralize_Test08()
     {
         const int input = 8;
-        
+
         int[,] actual = new int[input, input];
-        new Resolver().PaintIteration(actual, 0, input);
+        new Res().PaintIteration(actual, 0, input);
         Assert.Equal(_expectedTest8, actual);
     }
 
@@ -47,17 +47,17 @@ public class ResolverTest
         const int input = 5;
 
         int[,] actual = new int[input, input];
-        new Resolver().SpiralizeJelitter(actual, 0);
+        new Res().SpiralizeJelitter(actual, 0);
         Assert.Equal(_expectedTest05, actual);
     }
-    
+
     [Fact]
     public void SpiralizeJelitter_Test08()
     {
         const int input = 8;
-        
+
         int[,] actual = new int[input, input];
-        new Resolver().SpiralizeJelitter(actual, 0);
+        new Res().SpiralizeJelitter(actual, 0);
         Assert.Equal(_expectedTest8, actual);
     }
 
@@ -66,53 +66,52 @@ public class ResolverTest
     {
         const int input = 5;
 
-        int[,] actual = new Resolver().SpiralizeKableado(input);
+        int[,] actual = new Res().SpiralizeKableado(input);
         Assert.Equal(_expectedTest05, actual);
     }
-    
+
     [Fact]
     public void SpiralizeKableado_Test08()
     {
         const int input = 8;
-        
-        int[,] actual = new Resolver().SpiralizeKableado(input);
+
+        int[,] actual = new Res().SpiralizeKableado(input);
         Assert.Equal(_expectedTest8, actual);
     }
-    
+
     [Fact]
     public void SpiralizeKableado2_Test05()
     {
         const int input = 5;
 
-        int[,] actual = new Resolver().SpiralizeKableado2(input);
+        int[,] actual = new Res().SpiralizeKableado2(input);
         Assert.Equal(_expectedTest05, actual);
     }
-    
+
     [Fact]
     public void SpiralizeKableado2_Test08()
     {
         const int input = 8;
-        
-        int[,] actual = new Resolver().SpiralizeKableado2(input);
+
+        int[,] actual = new Res().SpiralizeKableado2(input);
         Assert.Equal(_expectedTest8, actual);
     }
-    
-    
+
     [Fact]
     public void SpiralizeCDeCompilador_Test05()
     {
         const int input = 5;
 
-        int[,] actual = new Resolver().SpiralizeCDeCompilador(input);
+        int[,] actual = new Res().SpiralizeCDeCompilador(input);
         Assert.Equal(_expectedTest05, actual);
     }
-    
+
     [Fact]
     public void SpiralizeCDeCompilador_Test08()
     {
         const int input = 8;
-        
-        int[,] actual = new Resolver().SpiralizeCDeCompilador(input);
+
+        int[,] actual = new Res().SpiralizeCDeCompilador(input);
         Assert.Equal(_expectedTest8, actual);
     }
 
