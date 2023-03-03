@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeASpiral", "Kyu3\MakeASp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnailSort", "Kyu4\SnailSort\SnailSort.csproj", "{73D36217-28CB-41EA-ADC2-27F1DA183CD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeASpiral.Test", "MakeASpiral.Test\MakeASpiral.Test.csproj", "{84D7F972-C87D-4DD1-856C-9253384BFC94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D36217-28CB-41EA-ADC2-27F1DA183CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D7F972-C87D-4DD1-856C-9253384BFC94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

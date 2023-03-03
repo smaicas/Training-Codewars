@@ -89,7 +89,7 @@ public class Resolver
         //SpiralizeCDeCompilador(Size);
         SpiralizeCDeCompilador(Size3);
 
-    private void SpiralizeJelitter(int[,] arr, int x)
+    public void SpiralizeJelitter(int[,] arr, int x)
     {
         int arrLength = arr.GetLength(0);
         if ((x > Math.Ceiling((float)arrLength / 2) - 1))
@@ -175,7 +175,7 @@ public class Resolver
         int len = size + 1;
         int x = -2;
         int y = 0;
-        while (len <= 1)
+        while (len > 1)
         {
             for (int i = 0; i < len; i++)
             {
@@ -279,7 +279,7 @@ public class Resolver
         return result;
     }
 
-    private void PaintIteration(int[,] res, int index, int size)
+    public void PaintIteration(int[,] res, int index, int size)
     {
         if (index >= size)
         {
