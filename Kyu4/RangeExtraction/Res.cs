@@ -47,6 +47,9 @@ public class Res
     [Benchmark]
     public void ResolveAael() => RangeExtraction.Extract(_input);
 
+    [Benchmark]
+    public void ResolveAael2() => RangeExtraction2.Extract(_input);
+
     private string RangeList(IReadOnlyList<int> input, int index)
     {
         int i = index;
@@ -106,4 +109,36 @@ public class RangeExtraction
 
         return string.Join(",", list);
     }
+}
+
+public class RangeExtraction2
+{
+    public int Value, Count;
+    public int NextValue => Value + Count;
+
+    public RangeExtraction2(int value)
+    {
+        Value = value;
+        Count = 1;
+    }
+
+    public override string ToString()
+        => Count == 1 ? $"{Value}" :
+            Count == 2 ? $"{Value},{Value + 1}" :
+            $"{Value}-{NextValue - 1}";
+
+    public static string Extract(int[] args)
+    {
+        List<RangeExtraction2> list = new();
+
+        foreach (int n in args)
+            if (list.LastOrDefault()?.NextValue == n) list.Last().Count++;
+            else list.Add(new RangeExtraction2(n));
+
+        return string.Join(",", list.Select(GetValue));
+    }
+
+    private static string? GetValue(RangeExtraction2 rangeExtraction2) => rangeExtraction2.Count == 1 ? $"{rangeExtraction2.Value}" :
+            rangeExtraction2.Count == 2 ? $"{rangeExtraction2.Value},{rangeExtraction2.Value + 1}" :
+            $"{rangeExtraction2.Value}-{rangeExtraction2.NextValue - 1}";
 }
