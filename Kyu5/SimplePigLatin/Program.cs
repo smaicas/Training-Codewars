@@ -9,12 +9,7 @@ public class Res
         {
             string word = new(x.ToCharArray().Where(char.IsLetterOrDigit).ToArray());
 
-            if (word.Length == 0)
-            {
-                return x;
-            }
-
-            return $"{x.Substring(1, word.Length - 1)}{x[0]}ay{x.Substring(word.Length - 1, x.Length - word.Length)}";
+            return word.Length == 0 ? x : $"{x.Substring(1, word.Length - 1)}{x[0]}ay{x.Substring(word.Length - 1, x.Length - word.Length)}";
         }));
     }
 
