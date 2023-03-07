@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Kyu3\MakeASpiral\MakeASpiral.csproj" />
+      <ProjectReference Include="..\MakeASpiral\MakeASpiral.csproj" />
     </ItemGroup>
 
 </Project>
